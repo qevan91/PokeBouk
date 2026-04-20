@@ -1,0 +1,73 @@
+/* admin.css */
+
+/* --- HEADER & ACTIONS --- */
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px; }
+.btn-add { background: #2ecc71; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; font-weight: bold; width: auto; }
+
+/* --- TABLEAU RESPONSIVE --- */
+/* On ajoute un conteneur pour le scroll horizontal sur mobile */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.admin-table { width: 100%; border-collapse: collapse; background: #1a1a1a; min-width: 600px; /* Force une largeur min pour ne pas écraser */ }
+.admin-table th, .admin-table td { padding: 15px; text-align: left; border-bottom: 1px solid #333; }
+.badge { background: #444; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; white-space: nowrap; }
+
+.btn-edit { background: #f1c40f; border: none; padding: 6px 12px; cursor: pointer; margin-right: 5px; border-radius: 4px; }
+.btn-delete { background: #e74c3c; color: white; border: none; padding: 6px 12px; cursor: pointer; border-radius: 4px; }
+
+/* --- MODAL RESPONSIVE --- */
+.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: flex; justify-content: center; align-items: center; z-index: 1000; backdrop-filter: blur(4px); padding: 10px; box-sizing: border-box; }
+
+.modal {
+    background: #222;
+    padding: 20px; /* Réduit un peu le padding */
+    width: 100%;
+    max-width: 600px; /* Max 600px sur PC */
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 95vh; /* Prend presque toute la hauteur sur mobile */
+    overflow-y: auto;
+    color: white;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.form-content { display: flex; flex-direction: column; gap: 12px; }
+
+/* --- INPUTS --- */
+.input { padding: 12px; background: #151515; border: 1px solid #444; color: white; border-radius: 6px; width: 100%; box-sizing: border-box; outline: none; transition: border 0.2s; font-size: 16px; /* 16px empêche le zoom auto sur iPhone */ }
+.input:focus { border-color: #6441a5; }
+select.input option { background: #151515; color: white; }
+
+/* --- FEEDBACK STATUS --- */
+.status-badge { padding: 10px; border-radius: 6px; font-size: 0.9rem; text-align: center; border: 1px solid transparent; }
+.status-badge.success { background: rgba(46, 204, 113, 0.15); color: #2ecc71; border-color: #2ecc71; }
+.status-badge.error { background: rgba(231, 76, 60, 0.15); color: #e74c3c; border-color: #e74c3c; }
+
+.fade-enter-active, .fade-leave-active { transition: opacity 0.3s; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
+
+.modal-actions { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+.btn-save, .btn-cancel { flex: 1; padding: 14px; /* Plus gros pour le doigt */ border-radius: 8px; font-size: 1rem; }
+.btn-save { background: #6441a5; color: white; border: none; cursor: pointer; font-weight: bold; }
+.btn-save:disabled { background: #444; cursor: not-allowed; opacity: 0.6; }
+.btn-cancel { background: transparent; color: #aaa; border: 1px solid #444; cursor: pointer; }
+
+/* --- IMAGES MANAGER --- */
+.images-manager { background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px dashed #444; }
+.gallery-preview { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px; }
+.img-card { position: relative; width: 70px; height: 70px; border-radius: 6px; overflow: hidden; border: 1px solid #333; }
+.img-card img { width: 100%; height: 100%; object-fit: cover; }
+.btn-img-del { position: absolute; top: 0; right: 0; background: rgba(231, 76, 60, 0.9); color: white; border: none; cursor: pointer; width: 24px; height: 24px; display: flex; justify-content: center; align-items: center; font-size: 14px; border-bottom-left-radius: 6px; }
+
+.upload-zone { text-align: center; }
+.btn-upload { display: block; width: 100%; text-align: center; box-sizing: border-box; background: #333; border: 1px solid #444; padding: 15px 20px; cursor: pointer; border-radius: 6px; font-size: 0.9rem; margin-top: 5px; }
+.btn-upload:hover { background: #444; }
+.loading-text { color: #f1c40f; font-size: 0.9rem; }
