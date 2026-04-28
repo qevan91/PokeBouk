@@ -1,12 +1,12 @@
-# PokéBouk - Plateforme Web, Wiki, Boutique & Système de Tournois e-sport
+# PokeBouk - Plateforme Web, Wiki, Boutique & Système de Tournois e-sport
 
 ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase&logoColor=3ECF8E)
 
-Bienvenue sur le repo de la plateforme **PokéBouk** !
+Bienvenue sur le repo de la plateforme **PokeBouk** !
 
-À l'origine, ce projet a été pensé pour accompagner un serveur Minecraft communautaire (lié à la chaîne Twitch d'un ami).
+À l'origine, ce projet a été pensé pour accompagner un serveur Minecraft communautaire (lié à la chaîne Twitch d'Hemmmbouk).
 L'objectif était de concevoir une boutique, un Wiki collaboratif, mais surtout **d'automatiser de A à Z la gestion de nos tournois**.
 
 Fini les arbres de tournoi gérés à la main sur Excel et sur un papier. La plateforme s'occupe de tout, de l'inscription jusqu'à la courronne du vainqueur. L'arbre est consultable par tout le monde.
